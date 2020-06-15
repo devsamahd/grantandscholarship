@@ -1,0 +1,29 @@
+body{
+	overflow-x: hidden;
+	font-family: cursive;
+	
+}
+.row{
+	padding-top: 30px;
+	max-width: 100%;
+}
+.form h3{
+	color: black;
+	padding-bottom: 10px;
+}
+.form{
+	color: grey;
+	border-radius: 5px;
+	
+	
+	padding: 20px;
+	box-shadow: 9px 8px 20px 0px lightgrey;
+
+}
+.form-row{
+	padding-bottom: 15px;
+}
+input[aria-invalid="true"], textarea[aria-invalid="true"] {
+  border: 1px solid #f00;
+  box-shadow: 0 0 4px 0 #f00;
+}
