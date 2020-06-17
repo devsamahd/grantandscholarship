@@ -1,14 +1,21 @@
 body{
 	overflow-x: hidden;
-	font-family: nunito, sans-serif;
+	font-family: "Inter UI",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+	"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",
+	"Noto Color Emoji";
 
 
 }
+*{
+	max-width: 100%;
+}
 .introsec{
 	width: 100%;
-	height: 500px;
-	background-image: url('lanscape.jpg');
+	height: 600px;
+	background-color: #f1f6fd;
 	text-align: center;
+	border-bottom-right-radius: 10%;
+
 }
 .alreadyknw{
 	padding-top: 40px;
@@ -17,12 +24,12 @@ body{
 	box-shadow: 9px 8px 20px 0px lightgrey;
 	margin: 30px;
 	width: 90%;
-	height: 190px;
+	
 	padding-top: 5px;
 }
 .topinfo{
 	padding-top: 25px;
-	font-family: nunito, sans-serif;
+	font-family: inherit;
 	font-size: 1.1875rem;
 	width: 100%;
 
@@ -30,8 +37,8 @@ body{
 .joinsch{
 	padding-top: 60px;
 	font-size: bolder;
-	font-family: cursive;
-	color: white;
+	font-family: inherit;
+	color:black;
 	width: 100%;
 
 }
@@ -60,26 +67,29 @@ a{
 }
 .cardi{
 	box-shadow: 9px 8px 20px 0px lightgrey;
-	border: 0px ;
+	border: 0px 
 	width: 92%;
 	padding-left: 10px; 
+	 
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 .cardi h4{
-	font-family: cursive;
+	font-family: inherit;
 }
 .cardcol{
 	padding-top: 70px;
 
 }
 .joinschmoreinfo{
-	color: lightgrey;
-	font-family: cursive;
+	color: grey;
+	font-size: 1.25rem;
+    font-weight: 400;
+    padding-bottom: 20px;
 }
 .schtype{
-	font-family: cursive;
-	color: white;
+	font-family: inherit;
+	color: black;
 	width: 100%;
 }
 .schtype .col-md-4 .li{
@@ -90,13 +100,15 @@ a{
 	padding-left: 5px;
 }
 .schtype .col-md-4 .li .fa-check{
-	color: lightgreen;
+	color: #177317;
 }
 .grantheader{
-	background-image: url('puzzle.jpg');
+
 	filter: opacity(0.8);
-	background-attachment: fixed;
+	
 	width: 100%;
+	border-radius: 10px;
+	margin: 10px;
 	
 }
 .grantcontent{
@@ -106,12 +118,13 @@ a{
 	width: 100%;
 }
 .apysch{
-	font-family: cursive;
+	font-family: inherit;
 	padding-top: 30px;
 	text-align: center;	
 	color: white;
 	width: 100%;
 }
+
 .row{
 	max-width: 100%;
 }
@@ -121,10 +134,6 @@ a{
 	border-radius: 5px;
 	
 }
-.col-md-3 .smallbox{
-
-
-}
 .smallboxcontainer{
 	width: 100% !important;
 	padding-left: 0px;
@@ -132,35 +141,55 @@ a{
 }
 .smallboxtext{
 	margin-top: 80px;
-	font-family: cursive;
+	font-family: inherit;
 	text-align: center;
+}
+.smallboxtext img{
+	max-width: 100%;
+}
+.footercontainer{
+	border-top: 4px dashed white;
+	padding-top: 100px;
+background-color: #007bff;
 }
 footer{
 	color: white;
 	padding-top: 60px;
 	padding-left: 20px;
 	padding-bottom: 60px;
-	font-family: cursive;
+	font-family: inherit;
 	text-align: center;
+	background-color: #031328 !important;
+	border-top-left-radius: 10%;
+	font-weight: bolder;
 }
 .footerlist{
 	padding-top: 20px;
-	font-family: serif;
+	font-family: inherit;
+	text-align: left !important;
+	color: lightgrey; 
 }
-.copyright, .social{
+.copyright .social{
 	padding: 10px;
-	font-family: cursive;
+	font-family: inherit;
 }
 
 .social{
 	word-spacing: 20px;
 }
-#register:disabled, #register[disabled]{
-	color: purple;
+.sub{
+	height: 70px;
+	width: 98%;
+	float: center;
 }
+
 
 @media only screen and (max-width: 600px){
 	.introsec{
 		height: inherit;
 	}
+	 .hide img{
+	max-width: 100%;
+	
+}
 }
