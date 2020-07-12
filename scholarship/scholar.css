@@ -1,0 +1,30 @@
+.schtitle{
+	font-size: 23px;
+}
+.subinfo{
+	font-size: 15px;
+	font-weight: bolder;
+	color: #b9b9b9;
+}
+.schtitle a{
+	text-decoration: none;
+}
+.subinfovalue{
+	font-size: 15px;
+	font-weight: lighter;
+	color: black;
+}
+.pad-top{
+	margin-top: 10px;
+}
+.subinfo .btn{
+	height: 40px;
+}
+.long-card{
+	box-shadow: 8px 13px 20px 0px lightgrey;
+	padding: 20px;
+	
+}
+.row{
+	max-width: 100%;
+}

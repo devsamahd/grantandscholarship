@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^scholar/([a-zA-Z0-9-/]+)$ scholar.php
+RewriteRule ^scholar/([a-zA-Z0-9-/]+)/ scholar.php

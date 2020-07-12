@@ -1,4 +1,10 @@
-<?php include_once "navbar/nav.php"  ?>
+<?php 
+
+
+
+
+
+include_once "navbar/nav.php"  ?>
 
 
 
@@ -9,25 +15,33 @@
 	<meta name="description" content="some stuffs">
 	<meta name="keywords" content="grant, scholarship, eon">
 	<meta name="author" content="just samahd">
-	<link href="favicon.ico" rel="icon" type="image/x-icon">
+	<link href="support/favicon.ico" rel="icon" type="image/x-icon">
    
-    <link rel="apple-touch-icon" type="image/x-icon" href = "favicon.ico"/>
-	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link rel="apple-touch-icon" type="image/x-icon" href = "support/favicon.ico"/>
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
 	<link rel="stylesheet" type="text/css" href="styles.css" />
-	<link rel="stylesheet" type="text/css" href="navbar/nav.css">
+	
 
 
 	<title>EON | Grant and scholarship</title>
 </head>
 <body>
-
 <div class="introsec" id="scholarship">
+<br>
+
+	<div class="row">
+		<div class="col-md-4"><img src="support/welcomecats.svg"></div>
+		<div class="col-md-8">
 	<h1 class="joinsch animated bounceInDown">Join the EON scholarship program today!</h1>
-	<div class="joinschmoreinfo animated bounceInUp">Education Online Nigeria Grant and Scholarship platform. Perfect place to gain a scholarship <br>or generate fund for your project through Grant. </div>
+	<div class="joinschmoreinfo animated bounceInUp">Education Online Nigeria Grant and Scholarship platform. Perfect <br>place to gain a scholarshipor generate fund for <br> your project through Grant. </div>
 	<span class="animated bounce"></span>
+	</div></div>
 	<br /><br /><br />
 	<div class="schtype row">
 
@@ -65,21 +79,21 @@
 <div class="row scroll-animations hide">
 	<div class="col-md-6">
 		<div class="alreadyknw animated row">
-			<span class="col-md-3"><img src="pig.svg" /></span> 
+			<span class="col-md-3"><img src="support/grant.svg" /></span> 
 			<div class="col-md-9">
 				<div class="topinfo">
 				Apply for Grant
 				</div>
 				<div>
 				Finance your project through crowd funding or competition on our platform.
-				<br /><div class="align-right"><div class="btn btn-success"><a href="register/register.php"> Register</a></div></div>
+				<br /><div class="align-right"><input type="submit" value="Register" class="btn btn-success" id="btn1"></div>
 				</div>
 			</div>
 	</div>
 </div>
 <div class="col-md-6">
 		<div class="alreadyknw animated row">
-			<span class="col-md-3"><img src="checklist.png" /></span> 
+			<span class="col-md-3"><img src="support/agree.svg" /></span> 
 			<div class="col-md-9">
 				<div class="topinfo">
 				Apply for Scholarship
@@ -87,7 +101,7 @@
 				<div>
 				Apply for a Scholarship to an higher institution in Nigeria.
 
-				<br /><div class="align-right"><div class="btn btn-success"><a href="../register/register.php">Register</a></div></div>
+				<br /><div class="align-right"><input type="submit" value="Register" class="btn btn-success" id="btn2"></div>
 				</div>
 			</div>
 	</div>
@@ -119,9 +133,9 @@
 <br><hr><br><br>
 
 
-<div class="grantheader bg-primary" id="grant">
+<div class="grantheader " id="grant" >
 	
-		<div class="apysch">
+		<div class="apysch jumbotron">
 
 			<h1 class="grantccontent">Apply for Grant!</h1>
 			<br />
@@ -129,32 +143,32 @@
 	</div>
 
 	
-</div>
-<div class="row smallboxcontainer">
-				<div class=" col-md-6 smallboxtext">
+</div><br><br><br>
+<div class="row smallboxcontainer " >
+				<div class=" col-md-6 smallboxtext box b" data-aos="flip-down">
 					<h1>Request Grant for your Agricultural project!</h1>
 					<div class="moreinfo">
 						Get a non-repayable fund disbursed to you for your agro project.
 					</div>
-					<img src="barley.png">
+					
 				</div>
-				<div class=" col-md-6 smallbox">
-					<img src="tractor.svg">
+				<div class=" col-md-6 smallbox box b" data-aos="zoom-in">
+					<img src="support/agree.svg">
 				</div>
 				
 			</div>
-
+<br><br><br>
 
 			<div class="row smallboxcontainer">
-				<div class=" col-md-6 smallbox">
-					<img src="footergraphics.svg" height="450">
+				<div class=" col-md-6 smallbox box a" data-aos="zoom-in">
+					<img src="support/projects.svg" height="450">
 				</div>
-				<div class=" col-md-6 smallboxtext">
-					<h1>Request Grant for your School project project!</h1>
+				<div class=" col-md-6 smallboxtext box b" data-aos="flip-up">
+					<h1>Request Grant for your School project!</h1>
 					<div class="moreinfo">
 						Get a non-repayable fund disbursed to you for your agro project.
 					</div>
-					<img src="finance.svg">
+					
 
 				</div>
 
@@ -162,51 +176,62 @@
 				
 			</div>
 			<br /><br />
+			<!-- <div class="partners">
+				<div class="row">
+					<div class="col-md-3"><i class="fa fa-github"></i></div>
+					<div class="col-md-3"><i class="fa fa-stack-overflow"></i></div>
+					<div class="col-md-3"><i class="fa fa-windows"></i></div>
+					<div class="col-md-3"><i class="fa fa-google"></i></div>
+				</div>
+			</div> -->
 			<div class="footercontainer">
-		<footer >
+
+				
+
+		<footer data-aos="flip-up" class="box a">
 			<div class="row">
 				
 				<div class="col-md-3">
 					<h4>Grant</h4>
 					
-						<div class="footerlist"><a href="register.php" >-Apply</a></div>
-						<div class="footerlist"><a href="register.php" >-Learn about this service</a></div>
-						<div class="footerlist"><a href="register.php" >-Talk to us</a></div>
-						<div class="footerlist"><a href="register.php" >-Terms and conditions</a></div>
+						<div class="footerlist"><a href="register/register.php" >-Apply</a></div>
+						<div class="footerlist"><a href="#grant" >-Learn about this service</a></div>
+						<div class="footerlist"><a href="#contacts" >-Talk to us</a></div>
+						
 					<br><br>
 					<h5>Scholarship</h5>
 
 
-						<div class="footerlist"><a href="register.php" >-Apply</a></div>
-						<div class="footerlist"><a href="register.php" >-Take Scholarship exam</a></div>
-						<div class="footerlist"><a href="register.php" >-Learn more about this service</a></div>
-						<div class="footerlist"><a href="register.php" >-Talk to us</a></div>
-						<div class="footerlist"><a href="register.php" >-Terms and conditions</a></div>
+						<div class="footerlist"><a href="register/register.php" >-Apply</a></div>
+						<div class="footerlist"><a href="#scholarship" >-Learn more about this service</a></div>
+						<div class="footerlist"><a href="#contacts" >-Talk to us</a></div>
+						
 								
 				</div>
 				
 				<div class="col-md-3">
 					<h5>Other Services</h5>
 
-						<div class="footerlist"><a href="register.php" >-EON e-library</a></div>
-						<div class="footerlist"><a href="register.php" >-EON Training Institute</a></div>
-						<div class="footerlist"><a href="register.php" >-EON Certifications and Examination</a></div>
-						<div class="footerlist"><a href="register.php" >-Career Guilding and Councelling</a></div>
-						<div class="footerlist"><a href="register.php" >-Crowd Funding</a></div>
+						<div class="footerlist"><a href="../crowdfunding/" >-Crowd Funding</a></div>
+						<div class="footerlist"><a href="#" >-EON Certifications and Examination services</a></div>
+						<div class="footerlist"><a href="#" >-EON Training Institute</a></div>
+						<div class="footerlist"><a href="#" >-My career, my life.</a></div>
+						<div class="footerlist"><a href="#" >-The Nigerian E-library</a></div>
 						<br>
 					
 					<h5>Information</h5>
 
 						
-						<div class="footerlist"><a href="register.php" >-About us</a></div>
-						<div class="footerlist"><a href="register.php" >-Talk to us</a></div>
-						<div class="footerlist"><a href="register.php" >-General Terms and conditions</a></div>
-						<div class="footerlist"><a href="register.php" >-FAQ</a></div>
+						<div class="footerlist"><a href="../about.php" >-About us</a></div>
+						<div class="footerlist"><a href="#" >-Talk to us</a></div>
+						<div class="footerlist"><a href="#" >-Place an advert</a></div>
+						<div class="footerlist"><a href="#" >-Terms and conditions</a></div>
+						<div class="footerlist"><a href="#" >-FAQ</a></div>
 
 				</div>
 				<div class="col-md-6">
 					
-					<div class="contacts" align="left">
+					<div class="contacts" align="left" id="contacts">
 						<span><i class="fa fa-map-marker"></i> Kwara State Library Ilorin, Nigeria.</span>
 						&nbsp;
 						&nbsp;
@@ -220,7 +245,8 @@
 						<input type="text" name="subscribeemail" class="form-control sub" placeholder="Enter your email">
 						<input type="submit" name="subscribebtn" class="btn btn-success float-right" value="Subscribe">
 					</div>
-					
+					<img src="support/contactus.svg">
+
 
 				</div>
 			</div>
@@ -238,8 +264,20 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
 <script type="text/javascript" src="script.js"></script>
 
 </html>
 
 
+<script type="text/javascript">
+	AOS.init();
+
+document.getElementById('btn1').onclick = () => {
+  window.location.href = "grant/index.php"
+};
+document.getElementById('btn2').onclick = () => {
+  window.location.href = "scholarship/index.php"
+};
+</script>

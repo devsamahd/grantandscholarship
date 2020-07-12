@@ -3,18 +3,24 @@ body{
 	font-family: "Inter UI",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
 	"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",
 	"Noto Color Emoji";
-
-
+	position: relative;
 }
 *{
 	max-width: 100%;
 }
+nav{
+	font-size: 40px;
+}
 .introsec{
 	width: 100%;
 	height: 600px;
-	background-color: #f1f6fd;
+	
+  background-image: linear-gradient(to bottom right, #90ee9069, white);
+
 	text-align: center;
 	border-bottom-right-radius: 10%;
+	
+
 
 }
 .alreadyknw{
@@ -40,6 +46,7 @@ body{
 	font-family: inherit;
 	color:black;
 	width: 100%;
+	text-align: right;
 
 }
  span img{
@@ -86,6 +93,7 @@ a{
 	font-size: 1.25rem;
     font-weight: 400;
     padding-bottom: 20px;
+    text-align: right;
 }
 .schtype{
 	font-family: inherit;
@@ -104,11 +112,9 @@ a{
 }
 .grantheader{
 
-	filter: opacity(0.8);
+	filter: grayscale(50%);
 	
-	width: 100%;
-	border-radius: 10px;
-	margin: 10px;
+	
 	
 }
 .grantcontent{
@@ -117,12 +123,17 @@ a{
 .scroll-animation{
 	width: 100%;
 }
-.apysch{
+.jumbotron{
 	font-family: inherit;
-	padding-top: 30px;
+	padding-top: 60px;
 	text-align: center;	
-	color: white;
-	width: 100%;
+	color:#0fec00;
+	background-image: url('support/grantbg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+
 }
 
 .row{
@@ -150,7 +161,7 @@ a{
 .footercontainer{
 	border-top: 4px dashed white;
 	padding-top: 100px;
-background-color: #007bff;
+background-color: #FaF8F0;
 }
 footer{
 	color: white;
@@ -159,7 +170,7 @@ footer{
 	padding-bottom: 60px;
 	font-family: inherit;
 	text-align: center;
-	background-color: #031328 !important;
+	background-color: #043353 !important;
 	border-top-left-radius: 10%;
 	font-weight: bolder;
 }
@@ -168,6 +179,8 @@ footer{
 	font-family: inherit;
 	text-align: left !important;
 	color: lightgrey; 
+	font-weight: lighter;
+
 }
 .copyright .social{
 	padding: 10px;
@@ -192,4 +205,21 @@ footer{
 	max-width: 100%;
 	
 }
+.grantcontent{
+	width: 20px;
+}
+.row{
+	max-width: 100%;
+}
+}
+.partners{
+	height: 200px;
+	background-color: lightgrey;
+	width: 100%;
+	font-size: 50px;
+	text-align: center;
+}
+
+.partners .row .col-md-3{
+	margin: 1rem 0rem;
 }
