@@ -2,6 +2,16 @@
 
 include("../navbar/nav.php");
 include("../config/database.php");
+
+$schcat_id;
+
+if (!isset($_GET['schcat_id'])) {
+	header("location: index.php");
+}
+else{
+	$schcat_id = $_GET['schcat_id'];
+}
+
 $db = new Database;
 
 $schcounts;
@@ -40,12 +50,12 @@ $schcounts;
   return 'NGN ' . number_format($value, 2);
 }
 
-	$call = "select * from scholarship";
+	$call = "select * from scholarship, scholarship_cats where scholarship.cat_id = scholarship_cats.schcat_id and scholarship_cats.schcat_id = '$schcat_id'";
 	$stmt = $db->prepare($call);
 	$exe = $stmt->execute();
 
 
-	if ($exe) {
+	if (count($stmt) >= 1) {
 		while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
 			$sch_id = $row['sch_id'];
@@ -76,9 +86,16 @@ $schcounts;
 		<br><br>
 		
 	
-	<?php   }
+	<?php
+	   }
 	}
-?></div>
+
+	else{
+		echo "No Scholarship is available for this category";
+	}
+
+?>
+</div>
 	<div class='col-md-2'></div>
 	
 </div>

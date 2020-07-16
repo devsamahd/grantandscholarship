@@ -37,7 +37,6 @@
         </span>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="min-width: 400px !important;">
           <a class="dropdown-item" href="#">Your matches</a><hr>
-          <a class="dropdown-item" href="#">EON Scholarship</a><hr>
           <a class="dropdown-item" href="#">Sponsored Scholarship</a><hr>
           <a class="dropdown-item" href="#">Easy to Apply</a><hr>
           <a class="dropdown-item" href="#">Popular</a><hr>

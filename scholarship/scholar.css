@@ -1,3 +1,7 @@
+body{
+		margin: 0;
+		padding: 0;
+	}
 .schtitle{
 	font-size: 23px;
 }
@@ -27,4 +31,167 @@
 }
 .row{
 	max-width: 100%;
+}
+.pad{
+	padding: 5%;
+}
+	.banner{
+		width: 100%;
+		height: 500px;
+		position: relative;
+		background-color: #043353;
+		align-content: center;
+	}
+
+	.some-text{
+		font-size: 23px;
+		font-weight: lighter;
+	}
+	.some-text h4{
+		font-weight: bolder;
+	}
+	.mycard .moreinfo{
+		padding:10px;
+	}
+	
+	.h3{
+		position: relative;
+		top: 30%;
+		font-family: big-john;
+		color: #fff;
+		text-shadow: 0 2px 20px #000;
+		font-size: 50px;
+		text-align: center;
+	}
+	.aim{
+		padding-top: 13%;
+		color: white;
+		text-align: center;
+		font-weight: lighter;
+		font-size: 25px;
+	}
+	.content2{
+		background: #FAF8F0;
+
+		padding: 4%;
+	}
+	.anotherone{
+		padding: 5%;
+	}
+	.content{
+		padding-top: 100px;
+		position: relative;
+		background: #FAF8F0;
+		border-bottom-right-radius: 50px;
+		border-bottom-left-radius: 50px;
+	}
+	.content:before{
+		position: absolute;
+		content: '';
+		width: 60%;
+		height: 130px;
+		top:-50px;
+		left:0;
+		background: #fff;
+		transform: skewY(10deg);
+		-webkit-transform: skewY(10deg);
+		background: #FAF8F0;
+
+	}
+	.content:after{
+		position: absolute;
+		content: '';
+		width: 60%;
+		height: 130px;
+		top:-50px;
+		right:0;
+		background: #fff;
+		transform: skewY(-10deg);
+		-webkit-transform: skewY(-10deg);
+		background: #FAF8F0;
+
+	}
+
+	
+	.row{
+		max-width: 100%;
+	}
+	img{
+		max-width: 100%;
+	}
+.smallbox img{
+	width: 100%;
+	margin-top: 20px;
+	border-radius: 5px;
+	
+}
+.smallboxcontainer{
+	width: 100% !important;
+	padding-left: 0px;
+
+}
+.smallboxtext{
+	margin-top: 80px;
+	font-family: inherit;
+	text-align: center;
+}
+.smallboxtext img{
+	max-width: 100%;
+}
+.footercontainer{
+	border-top: 4px dashed white;
+	padding-top: 100px;
+	background-color: #18A4E0;
+}
+.btn{
+	margin: 5%;
+	font-size: 17px;
+	width: 100px;
+}
+footer{
+	color: white;
+	padding-top: 60px;
+	padding-left: 20px;
+	padding-bottom: 60px;
+	font-family: inherit;
+	text-align: center;
+	background-color: #043353 !important;
+	border-top-left-radius: 10%;
+	font-weight: bolder;
+}
+.footerlist{
+	padding-top: 20px;
+	font-family: inherit;
+	text-align: left !important;
+	color: lightgrey; 
+	font-weight: lighter;
+
+}
+.copyright .social{
+	padding: 10px;
+	font-family: inherit;
+}
+
+.social{
+	word-spacing: 20px;
+}
+.sub{
+	height: 70px;
+	width: 98%;
+	float: center;
+}
+.mycard{
+	border-radius: 10px;
+	background: #D3DDE6;
+	height: 400px;
+}
+.mycard .picturetop{
+	background: white;
+	height: 50%;
+	width: 100%;
+}
+@media only screen and (max-width: 600px){
+.aim{
+		padding-top: 30%;
+	}
 }

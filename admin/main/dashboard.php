@@ -194,6 +194,7 @@ if($run){
 
 
                                 </table>
+                                <div class="btn btn-primary" id="addScholarship">Add Scholarship</div>
                             </div>
                         </div>
                     </div>
@@ -223,7 +224,7 @@ if($run){
                                     </thead>
                                     <?php
 
-$query = "select * from grantrequests,users where grantrequests.user_id = users.user_id";
+/** $query = "select * from grantrequests,users where grantrequests.user_id = users.user_id";
 $connect = $db->prepare($query);
 
 $run = $connect->execute();
@@ -249,7 +250,7 @@ if($run){
 
 
   }
-}
+} **/
 ?>
                                 </table>
                             </div>

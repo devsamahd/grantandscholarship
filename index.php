@@ -1,10 +1,3 @@
-<?php 
-
-
-
-
-
-include_once "navbar/nav.php"  ?>
 
 
 
@@ -12,7 +5,7 @@ include_once "navbar/nav.php"  ?>
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="some stuffs">
+	<meta name="description" content="Education Online Nigeria Grant and Scholarship platform. Perfect <br>place to gain a scholarshipor generate fund for your project through Grant.">
 	<meta name="keywords" content="grant, scholarship, eon">
 	<meta name="author" content="just samahd">
 	<link href="support/favicon.ico" rel="icon" type="image/x-icon">
@@ -31,7 +24,12 @@ include_once "navbar/nav.php"  ?>
 
 	<title>EON | Grant and scholarship</title>
 </head>
+
 <body>
+	<?php
+include_once "navbar/nav.php"
+  ?>
+
 <div class="introsec" id="scholarship">
 <br>
 
@@ -86,7 +84,7 @@ include_once "navbar/nav.php"  ?>
 				</div>
 				<div>
 				Finance your project through crowd funding or competition on our platform.
-				<br /><div class="align-right"><input type="submit" value="Register" class="btn btn-success" id="btn1"></div>
+				<br /><div class="align-right"><input type="submit" value="Read more.." class="btn btn-success" id="btn1"></div>
 				</div>
 			</div>
 	</div>
@@ -101,7 +99,7 @@ include_once "navbar/nav.php"  ?>
 				<div>
 				Apply for a Scholarship to an higher institution in Nigeria.
 
-				<br /><div class="align-right"><input type="submit" value="Register" class="btn btn-success" id="btn2"></div>
+				<br /><div class="align-right"><input type="submit" value="Read more.." class="btn btn-success" id="btn2"></div>
 				</div>
 			</div>
 	</div>
@@ -171,7 +169,6 @@ include_once "navbar/nav.php"  ?>
 					
 
 				</div>
-
 				
 				
 			</div>
@@ -184,81 +181,9 @@ include_once "navbar/nav.php"  ?>
 					<div class="col-md-3"><i class="fa fa-google"></i></div>
 				</div>
 			</div> -->
-			<div class="footercontainer">
-
-				
-
-		<footer data-aos="flip-up" class="box a">
-			<div class="row">
-				
-				<div class="col-md-3">
-					<h4>Grant</h4>
-					
-						<div class="footerlist"><a href="register/register.php" >-Apply</a></div>
-						<div class="footerlist"><a href="#grant" >-Learn about this service</a></div>
-						<div class="footerlist"><a href="#contacts" >-Talk to us</a></div>
-						
-					<br><br>
-					<h5>Scholarship</h5>
-
-
-						<div class="footerlist"><a href="register/register.php" >-Apply</a></div>
-						<div class="footerlist"><a href="#scholarship" >-Learn more about this service</a></div>
-						<div class="footerlist"><a href="#contacts" >-Talk to us</a></div>
-						
-								
-				</div>
-				
-				<div class="col-md-3">
-					<h5>Other Services</h5>
-
-						<div class="footerlist"><a href="../crowdfunding/" >-Crowd Funding</a></div>
-						<div class="footerlist"><a href="#" >-EON Certifications and Examination services</a></div>
-						<div class="footerlist"><a href="#" >-EON Training Institute</a></div>
-						<div class="footerlist"><a href="#" >-My career, my life.</a></div>
-						<div class="footerlist"><a href="#" >-The Nigerian E-library</a></div>
-						<br>
-					
-					<h5>Information</h5>
-
-						
-						<div class="footerlist"><a href="../about.php" >-About us</a></div>
-						<div class="footerlist"><a href="#" >-Talk to us</a></div>
-						<div class="footerlist"><a href="#" >-Place an advert</a></div>
-						<div class="footerlist"><a href="#" >-Terms and conditions</a></div>
-						<div class="footerlist"><a href="#" >-FAQ</a></div>
-
-				</div>
-				<div class="col-md-6">
-					
-					<div class="contacts" align="left" id="contacts">
-						<span><i class="fa fa-map-marker"></i> Kwara State Library Ilorin, Nigeria.</span>
-						&nbsp;
-						&nbsp;
-						&nbsp;
-						<span><i class="fa fa-phone"></i> +2348136486870</span><br /><br />
-						<span><i class="fa fa-paper-plane"></i> hello@eon.com.ng </span>
-					</div><br /><br />
-					<div class="subscribe">
-						<h5>Subscribe to EON newsletter.</h5>
-						<span class="footerlist" style="font-weight: lighter;">Get the latest EON news, products, and offers sent directly to your inbox</span><br/><br/>
-						<input type="text" name="subscribeemail" class="form-control sub" placeholder="Enter your email">
-						<input type="submit" name="subscribebtn" class="btn btn-success float-right" value="Subscribe">
-					</div>
-					<img src="support/contactus.svg">
-
-
-				</div>
-			</div>
-		</footer>
-		<b>&copy; Education Online Nigeria | 2020</b>
+<?php include('footer.php'); ?>
 			
-		<span class="social" style="float: right; padding-right:10px;">
-				<i class="fa fa-facebook"></i>
-				<i class="fa fa-twitter"></i>
-				<i class="fa fa-linkedin"></i>
-			</span>
-</div>
+			
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -272,7 +197,7 @@ include_once "navbar/nav.php"  ?>
 
 
 <script type="text/javascript">
-	AOS.init();
+	// AOS.init();
 
 document.getElementById('btn1').onclick = () => {
   window.location.href = "grant/index.php"
